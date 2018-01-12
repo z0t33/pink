@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/OpenSansLight.woff'),
+         url('fonts/OpenSansLight.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/OpenSansBold.woff'),
+         url('fonts/OpenSansBold.woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+.container {
+    margin: 0 10.8333%;
+}
+
+body {
+    width: 100%;
+    font-family: 'Open Sans';
+    font-size: 100%;
+    line-height: 1.2;
+}
+.page-header {
+    padding-top: 25px;
+    outline: 1px solid #000;
+}
+.page-header__logo {
+    float: left;
+    height: 40px;
+    width: 147px;
+    margin-bottom: 45px;
+    outline: 1px solid #000;
+}
+.page-navigation {
+    float: right;
+    width: 68.4042553%;
+    height: 40px;
+    outline: 1px solid #000;
+}
+.page-navigation ul {
+    margin: 0;
+    list-style: none;    
+}
+.promo {
+    height: 740px;
+    outline: 1px solid #000;
+}
+.promo > .container {
+    padding-top: 116px;
+}
+.promo__download {
+    width: 32.446809%;
+    height: 520px;
+    outline: 1px solid #000;
+}
+
