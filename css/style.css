@@ -1,7 +1,8 @@
+//context = 944px
 @font-face {
     font-family: 'Open Sans';
     src: url('fonts/OpenSansLight.woff'),
-         url('fonts/OpenSansLight.woff');
+         url('fonts/OpenSansLight.woff2');
     font-weight: normal;
     font-style: normal;
 }
@@ -17,47 +18,311 @@
     display: table;
     clear: both;
 }
-.container {
-    margin: 0 10.8333%;
-}
 
 body {
     width: 100%;
+    max-width: 1200px;
+    margin: auto;
     font-family: 'Open Sans';
     font-size: 100%;
     line-height: 1.2;
 }
+.container {
+    margin: 0 10.8333%;
+}
 .page-header {
-    padding-top: 25px;
+    padding-top: 26px;
+    margin-bottom: -110px;
     outline: 1px solid #000;
 }
 .page-header__logo {
     float: left;
     height: 40px;
-    width: 147px;
+    width: 15.572034%;
     margin-bottom: 45px;
     outline: 1px solid #000;
 }
 .page-navigation {
     float: right;
-    width: 68.4042553%;
+    width: 65.783898%;
     height: 40px;
     outline: 1px solid #000;
 }
 .page-navigation ul {
     margin: 0;
-    list-style: none;    
+    list-style: none;
 }
 .promo {
-    height: 740px;
+    padding-top: 208px;
     outline: 1px solid #000;
 }
-.promo > .container {
-    padding-top: 116px;
-}
 .promo__download {
-    width: 32.446809%;
-    height: 520px;
+    width: 31.991525%;
+    height: 500px;
+    outline: 1px solid #000;
+}
+.iphone {
+    float: right;
+    width: 59.322034%;
+    height: 647px;
+    margin-right: 4.787234%;
+    outline: 1px solid #000;
+}
+.advantages {
+    padding-top: 80px;
+    outline: 1px solid #000;
+}
+.advantages h1 {
+    width: 77.648305%;
+    height: 170px;
+    margin: 0 auto 75px;
+    outline: 1px solid #000;
+}
+.advantage {
+    float: left;
+    width: 27.542373%;
+    height: 555px;
+    margin-right: 5.826271%;
+    margin-bottom: 70px;
+    outline: 1px solid #000;
+}
+.advantage:last-child {
+    margin-right: 0;
+}
+.duration-effect {
+    padding: 100px 0 120px;
+    outline: 1px solid #000;
+}
+.duration-effect__description {
+    width: 55.826271%;
+    height: 200px;
+    margin-left: 38.877119%;
+    outline: 1px solid #000;
+}
+.reviews {
+    padding: 73px 0 56px;
+    outline: 1px solid #000;
+}
+.reviews blockquote {
+    margin: 0;
+}
+.reviews__header {
+    width: 8.262712%;
+    height: 63px;
+    margin: 0 auto 57px;
+    outline: 1px solid #000;
+}
+.reviews__content {
+    height: 80px;
+    margin: 0 auto 50px;
+    outline: 1px solid #000;
+}
+.reviews__footer {
+    height: 50px;
+    outline: 1px solid #000;
+}
+.app-price {
+    padding: 147px 0 95px;
+    outline: 1px solid #000;
+}
+.app-price th, .app-price td {
+    border: 1px solid #000;
+}
+.app-price table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.app-price th {
+    height: 98px;
+    width: 24.894068%;
+}
+.app-price th:first-child {
+    border: none;
+}
+.app-price td {
+    height: 60px;
+    width: 24.894068%;
+}
+.contacts {
+    padding: 75px 0 20px;
+    outline: 1px solid #000;
+}
+.contacts h1 {
+    height: 100px;
+    margin-bottom: 70px;
+    outline: 1px solid #000;
+
+
+}
+.contacts__item {
+    float: left;
+    height: 100px;
+    width: 26.165254%;
+    margin-right: 10.59322%;
+    margin-bottom: 25px;
+    outline: 1px solid #000;
+}
+.contacts-item:last-child {
+    margin-right: 0;
+}
+.map {
+    height: 500px;
+    outline: 1px solid #000;
+}
+.page-footer {
+    padding: 70px 0 75px;
+}
+.page-footer__item {
+    float: left;
+    margin-right: 24.364407%;
+}
+.page-footer__item:last-child {
+    margin-right: 0;
+}
+.page-footer__item--logo {
+    width: 15.889831%;
+    height: 45px;
+    outline: 1px solid #000;
+}
+.page-footer__item--social {
+    width: 18.855932%;
+    height: 50px;
+    outline: 1px solid #000;
+}
+.page-footer__item--developer {
+    width: 16.313559%;
+    height: 40px;
     outline: 1px solid #000;
 }
 
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        margin: 0 5.571429%;
+    }
+    .page-header {
+        padding-top: 27px;
+    }
+    .page-header__logo {
+        width: 24.115756%;
+    }
+    .page-navigation {
+        width: 8.360129%;
+    }
+    .promo {
+        padding-top: 183px;
+    }
+    .promo__download {
+        position: relative;
+        width: 48.231511%;
+        height: 405px;
+        z-index: 1;
+    }
+    .iphone {
+        width: 75.562701%;
+        margin-right: 0;
+        height: 547px;
+    }
+    .advantages {
+        padding-top: 60px;
+    }
+    .advantages h1 {
+        width: 94.212219%;
+        height: 137px;
+        margin-bottom: 60px;
+    }
+    .advantage-wrapper {
+        float: right;
+        width: 47.427653%;
+        outline: 1px solid #000;
+    }
+    .advantages__image {
+        width: 42.604502%;
+        height: 480px;
+        outline: 1px solid #000;
+    }
+    .advantage {
+        float: none;
+        width: 100%;
+        height: 100px;
+        margin-bottom: 45px;
+    }
+    .advantage-picture {
+        display: none;
+    }
+    .advantage h2, .advantage p {
+        margin: 0;
+    }
+    .duration-effect {
+        padding-bottom: 67px;
+    }
+    .duration-effect__description {
+        width: 47.749196%;
+        margin-left: 49.517685%;
+    }
+    .reviews__header {
+        display: none;
+    }
+    .contacts__item--mail {
+        float: right;
+        margin-right: 0;
+    }
+    .contacts__item--address {
+        float: none;
+        margin: 0 auto 30px;
+        clear: both;
+    }
+    /* ширина 700px ширина контейнера 280px  50 25*/
+}
+
+
+
+@media screen and (max-width: 480px) {
+    .container {
+        margin: 0 6.25%;
+    }
+    .page-header__logo {
+        width: 26.785714%;
+        height: 25px;
+    }
+    .page-navigation {
+        width: 17.857143%;
+        height: 25px;
+    }
+    .promo {
+        position: relative;
+        margin-bottom: 270px;
+    }
+    .iphone {
+        float: none;
+        width: 91.785714%;
+        height: 287px;
+    }
+    .promo__download {
+        position: absolute;
+        width: 87.5%;
+        margin: auto;
+        height: 210px;
+        bottom: -235px
+    }
+    .advantage-wrapper {
+        float: none;
+        width: 100%;
+    }
+    .advantages__image {
+        width: 57.142857%;
+        height: 280px;
+        margin: auto;
+    }
+    .duration-effect {
+        display: none;
+    }
+    .contacts__item {
+        float: none;
+        width: 100%;
+    }
+    .page-footer {
+        display: none;
+    }
+}
