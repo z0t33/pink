@@ -6,130 +6,288 @@
     <title>Pink</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 </head>
 <body>
     <header class="page-header">
         <div class="container clearfix">
-            <div class="page-header__logo"></div>
+            <a href="index.html">
+                <svg class="logo logo--desktop page-header__logo">
+                    <path d="M14,1 Q4,-1 1,27 M1,28 6,28 M28,28 32,28 M56,28 60,28 M48,1 Q58,-1, 60,28" stroke="#fff" stroke-width="3" stroke-linecap="round" fill="none" />
+                    <circle r="11" cx="17" cy="28" stroke="#fff" stroke-width="3" stroke-dasharray="22.7 9 40" stroke-linecap="round" fill="none" />
+                    <circle r="11" cx="44" cy="28" stroke="#fff" stroke-width="3" stroke-dasharray="38.7 6 1.8 8 15" stroke-linecap="bevel" fill="none" />
+                    <text x="70" y="39" fill="#fff">pink</text>
+                    <polygon points="8,32.8 9,34.3 11,34.8 9,35.3 8,36.8 7,35.3 5,34.8 7,34.3" fill="#d22856" />
+                    <polygon points="35,19 36,20.5 38,21 36,21.5 35,23 34,21.5 32,21 34,20.5" fill="#d22856" />
+                    <polygon points="43,12 44,14.5 46,15.5 44,16.5 43,19 42,16.5 40,15.5 42,14.5" fill="#d22856" />
+                    <polygon points="93,7 94,9 96,10 94,11 93,13 92,11 90,10 92,9" fill="#d22856" />
+                </svg>
+                <svg class="logo logo--tablet page-header__logo">
+                    <path d="M14,1 Q4,-1 1,27 M1,28 6,28 M28,28 32,28 M56,28 60,28 M48,1 Q58,-1, 60,28" stroke="#fff" stroke-width="3" stroke-linecap="round" fill="none" />
+                    <circle r="11" cx="17" cy="28" stroke="#fff" stroke-width="3" fill="none" />
+                    <circle r="11" cx="44" cy="28" stroke="#fff" stroke-width="3" fill="none" />
+                    <text x="70" y="39" fill="#fff">pink</text>
+                </svg>
+                <svg class="logo logo--mobile page-header__logo">
+                    <text x="0" y="22" fill="#fff">pink</text>
+                </svg>
+            </a>
             <nav class="page-navigation">
-                <ul>
-                    <li class="page-navigation__item"><a href="#"></a></li>
-                    <li class="page-navigation__item"><a href="#"></a></li>
-                    <li class="page-navigation__item"><a href="#"></a></li>
-                    <li class="page-navigation__item"><a href="#"></a></li>
-                </ul>
+                <li><a class="page-navigation__item page-navigation__item--active" href="#">Главная</a></li>
+                <li><a class="page-navigation__item" href="#">Фотографии</a></li>
+                <li><a class="page-navigation__item" href="#">Конкурс</a></li>
+                <li><a class="page-navigation__item" href="#"><span>Html</span> Academy</a></li>
             </nav>
+            <div class="menu-burger">
+                <div class="menu-burger__line"></div>
+            </div>
         </div>
     </header>
     <div class="promo">
         <div class="container clearfix">
-            <div class="iphone"></div>
-            <div class="promo__download"></div>
+            <div class="promo__iphone"></div>
+            <div class="download-app">
+                <div class="download-app__wrapper">
+                    <h1 class="download-app__title">Взгляните на жизнь иначе!</h1>
+                    <a href="#" class="download-app__btn">Скачать приложение</a>
+                    <div class="download-app__OS-btns">
+                        <a href="#" class="download-app__OS-btn download-app__OS-btn--apple"></a>
+                        <a href="#" class="download-app__OS-btn download-app__OS-btn--android"></a>
+                        <a href="#" class="download-app__OS-btn download-app__OS-btn--win"></a>
+                    </div>
+                    <p class="download-app__OS-description">Доступно для Iphone, Ipad, Android, Windows Phone, OS X, Windows 8</p>
+                </div>
+            </div>
         </div>
     </div>
     <section class="advantages">
         <div class="container clearfix">
-            <h1></h1>
-            <div class="advantage-wrapper">
-                <section class="advantage">
-                    <div class="advantage-picture"></div>
-                    <h2></h2>
-                    <p></p>
-                </section>
-                <section class="advantage">
-                    <div class="advantage-picture"></div>
-                    <h2></h2>
-                    <p></p>
-                </section>
-                <section class="advantage">
-                    <div class="advantage-picture"></div>
-                    <h2></h2>
-                    <p></p>
-                </section>
+            <h1 class="advantages__title">Устали от серости мегаполиса?<span>Нам есть, что вам предложить!</span></h1>
+            <div class="advantages__wrapper clearfix">
+                <figure class="advantage-item">
+                    <img class="advantage-item__phone" src="img/screen1.png" alt="screen1" >
+                    <figcaption class="advantage-item__header">
+                        <h2 class="advantage-item__title">Поднимает настроение</h2>
+                    </figcaption>
+                    <p class="advantage-item__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+                </figure>
+                <figure class="advantage-item">
+                    <img class="advantage-item__phone" src="img/screen2.png" alt="screen2" >
+                    <figcaption class="advantage-item__header">
+                        <h2 class="advantage-item__title">Меняет мир вокруг</h2>
+                    </figcaption>
+                    <p class="advantage-item__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+                </figure>
+                <figure class="advantage-item">
+                    <img class="advantage-item__phone" src="img/screen3.png" alt="screen3" >
+                    <figcaption class="advantage-item__header">
+                        <h2 class="advantage-item__title">Заводит новых друзей</h2>
+                    </figcaption>
+                    <p class="advantage-item__description">Ставте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+                </figure>
             </div>
-            <div class="advantages__image"></div>
+            <div class="advantages__screen-image">
+                <img src="img/Iphone-tablet-screen.png" alt="Iphone-screen">
+            </div>
+        </div>
+        <div class="duration-effect">
+            <div class="container clearfix">
+                <div class="duration-effect__wrapper">
+                    <h2 class="duration-effect__title">Эффект <span>на 24 часа!</span></h2>
+                    <p class="duration-effect__description">
+                        Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
+                    </p>
+                    <a class="duration-effect__link" href="#">Узнать больше об исследовании</a>
+                </div>
+                <div class="duration-effect__picture"></div>
+            </div>
         </div>
     </section>
-    <div class="duration-effect">
+    <section class="reviews">
         <div class="container">
-            <div class="duration-effect__description">
-                <div class="duration-effect__picture"></div>
-                <h2></h2>
-                <p></p>
-                <a href="#"></a>
-            </div>
-        </div>
-    </div>
-    <div class="reviews">
-        <div class="container">
-            <blockquote>
-                <header class="reviews__header"></header>
-                <p class="reviews__content"></p>
-                <footer class="reviews__footer">
-                    <cite></cite>
-                    <p></p>
-                </footer>
+            <header class="reviews__header"></header>
+            
+            <blockquote class="reviews-item"> 
+                <input type="radio" id="reviews__radio-1" name="reviews" value="1" checked>
+                <input type="radio" id="reviews__radio-2" name="reviews" value="2">
+                <input type="radio" id="reviews__radio-3" name="reviews" value="3">
+
+
+                <div class="reviews-wrapper">
+                    <div class="reviews-wrapper--outer">
+                        <div class="reviews-wrapper--inner clearfix">
+                            <div class="review">
+                                <p class="reviews__content">
+                                    <span>&laquo;</span>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!<span>&raquo;</span>
+                                </p>
+                                <footer class="reviews__footer">
+                                    <cite>Николай Петров</cite>
+                                    <p>25 лет, водитель трамвая</p>
+                                </footer> 
+                            </div> 
+                            <div class="review">
+                                <p class="reviews__content">
+                                    <span>&laquo;</span>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!<span>&raquo;</span>
+                                </p>
+                                <footer class="reviews__footer">
+                                    <cite>Николай Иванов</cite>
+                                    <p>25 лет, водитель трамвая</p>
+                                </footer> 
+                            </div> 
+                            <div class="review">
+                                <p class="reviews__content">
+                                    <span>&laquo;</span>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!<span>&raquo;</span>
+                                </p>
+                                <footer class="reviews__footer">
+                                    <cite>Николай Сидоров</cite>
+                                    <p>25 лет, водитель трамвая</p>
+                                </footer> 
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+
+                <div class="reviews__switch-arrows">
+                    <label for="reviews__radio-1"></label>
+                    <label for="reviews__radio-2"></label>
+                    <label for="reviews__radio-3"></label>
+                </div>
+
+                <div class="labels-control labels-control--reviews">
+                    <label for="reviews__radio-1"></label>             
+                    <label for="reviews__radio-2"></label>
+                    <label for="reviews__radio-3"></label>
+                </div>
             </blockquote>
         </div>
-    </div>
+    </section>
     <div class="app-price">
+        <input type="radio" id="price__radio-1" name="price" value="1">
+        <input type="radio" id="price__radio-2" name="price" value="2" checked>
+        <input type="radio" id="price__radio-3" name="price" value="3">
+        <div class="labels-control labels-control--app-price">
+            <label for="price__radio-1"></label>         
+            <label for="price__radio-2"></label>
+            <label for="price__radio-3"></label>
+        </div>
         <div class="container">
-            <table>
+            <table class="app-price__table">
                 <thead>
                     <tr>
                         <th></th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
+                        <th>
+                            База
+                            <span class="app-price__item">1,99 usd</span>
+                        </th>
+                        <th class="best-sale">
+                            Стандарт
+                            <span class="app-price__item">3,99 usd</span>
+                        </th>
+                        <th>
+                            Анлим
+                            <span class="app-price__item">9,99 usd</span>
+                        </th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td>Розовый фильтр</td>
+                        <td>
+                            <span class="yes"></span>
+                            <span class="app-price__mobile-text">Розовый фильтр</span>
+                        </td>
+                        <td>
+                            <span class="yes"></span>
+                            <span class="app-price__mobile-text">Розовый фильтр</span>
+                        </td>
+                        <td>
+                            <span class="yes"></span>
+                            <span class="app-price__mobile-text">Розовый фильтр</span>
+                        </td>
                     </tr>
                     <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td>Смайлики</td>
+                        <td>
+                            <span class="no"></span>
+                            <span class="app-price__mobile-text">Смайлики</span>
+                        </td>
+                        <td>
+                            <span class="yes"></span>
+                            <span class="app-price__mobile-text">Смайлики</span>
+                        </td>
+                        <td>
+                            <span class="yes"></span>
+                            <span class="app-price__mobile-text">Смайлики</span>
+                        </td>
                     </tr>
                     <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td>Комментарии</td>
+                        <td>
+                            <span class="no"></span>
+                            <span class="app-price__mobile-text">Комментарии</span>
+                        </td>
+                        <td>
+                            <span class="no"></span>
+                            <span class="app-price__mobile-text">Комментарии</span>
+                        </td>
+                        <td>
+                            <span class="yes"></span>
+                            <span class="app-price__mobile-text">Комментарии</span>
+                        </td>
                     </tr>
                 </tbody>
             </table>
         </div>
     </div>
-    <section class="contacts">
-        <div class="container clearfix">
-            <h1></h1>
+    <section class="contacts clearfix">
+        <div class="container">
+            <h1 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h1>
             <div class="contacts__item contacts__item--phone">
-                <b></b>
-                <span></span>
+                <b class="contacts__subtitle">Звоните:</b>
+                <span>+7(812)555-66-66</span>
             </div>
             <div class="contacts__item contacts__item--mail">
-                <b></b>
-                <span></span>
+                <b class="contacts__subtitle">Пишите:</b>
+                <span><a class="mailto" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></span>
             </div>
             <div class="contacts__item contacts__item--address">
-                <b></b>
-                <span></span>
+                <b class="contacts__subtitle">Приезжайте в гости:</b>
+                <span>ул. Большая Конюшенная, 19/8</span>
             </div>
         </div>
-        <div class="map"></div>
     </section>
+    <div id="map" class="my-map"></div>
     <footer class="page-footer">
-        <div class="container clearfix">
-            <div class="page-footer__item page-footer__item--logo"></div>
-            <div class="page-footer__item page-footer__item--social"></div>
-            <div class="page-footer__item page-footer__item--developer"></div>
+        <div class="container">
+            <a href="index.html">
+                <svg class="logo logo--desktop page-footer__logo">
+                    <path d="M14,1 Q4,-1 1,27 M1,28 6,28 M28,28 32,28 M56,28 60,28 M48,1 Q58,-1, 60,28" stroke="#d22856" stroke-width="3" stroke-linecap="round" fill="none" />
+                    <circle r="11" cx="17" cy="28" stroke="#d22856" stroke-width="3" stroke-dasharray="22.7 9 40" stroke-linecap="round" fill="none" />
+                    <circle r="11" cx="44" cy="28" stroke="#d22856" stroke-width="3" stroke-dasharray="38.7 6 1.8 8 15" stroke-linecap="bevel" fill="none" />
+                    <text x="70" y="39" fill="#283645">pink</text>
+                    <polygon points="8,32.8 9,34.3 11,34.8 9,35.3 8,36.8 7,35.3 5,34.8 7,34.3" fill="#283645" />
+                    <polygon points="35,19 36,20.5 38,21 36,21.5 35,23 34,21.5 32,21 34,20.5" fill="#283645" />
+                    <polygon points="43,12 44,14.5 46,15.5 44,16.5 43,19 42,16.5 40,15.5 42,14.5" fill="#283645" />
+                    <polygon points="93,7 94,9 96,10 94,11 93,13 92,11 90,10 92,9" fill="#d22856" />
+                </svg>
+                <svg class="logo logo--tablet page-footer__logo">
+                    <path d="M14,1 Q4,-1 1,27 M1,28 6,28 M28,28 32,28 M56,28 60,28 M48,1 Q58,-1, 60,28" stroke="#d22856" stroke-width="3" stroke-linecap="round" fill="none" />
+                    <circle r="11" cx="17" cy="28" stroke="#d22856" stroke-width="3" fill="none" />
+                    <circle r="11" cx="44" cy="28" stroke="#d22856" stroke-width="3" fill="none" />
+                    <text x="70" y="39" fill="#283645">pink</text>
+                </svg>
+            </a>
+            <div class="social-icons">
+                <a class="social-icons__item" href="https://twitter.com" target="_blank"><i class="icon-twitter"></i></a>
+                <a class="social-icons__item" href="https://facebook.com" target="_blank"><i class="icon-facebook"></i></a>
+                <a class="social-icons__item" href="https://youtube.com" target="_blank"><i class="icon-play"></i></a>
+            </div>
+            <a class="develop-logo" href="https://htmlacademy.ru" target="_blank">
+                <span>Разработано</span>
+            </a>
         </div>
     </footer>
+    <script src="js/script.js"></script>
+    <script src="js/map.js"></script>
 </body>
 </html>
