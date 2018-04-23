@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pink</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="page-header">
+        <div class="container clearfix">
+            <a href="index.html">
+                <svg class="logo logo--desktop page-header__logo">
+                    <path d="M14,1 Q4,-1 1,27 M1,28 6,28 M28,28 32,28 M56,28 60,28 M48,1 Q58,-1, 60,28" stroke="#fff" stroke-width="3" stroke-linecap="round" fill="none" />
+                    <circle r="11" cx="17" cy="28" stroke="#fff" stroke-width="3" stroke-dasharray="22.7 9 40" stroke-linecap="round" fill="none" />
+                    <circle r="11" cx="44" cy="28" stroke="#fff" stroke-width="3" stroke-dasharray="38.7 6 1.8 8 15" stroke-linecap="bevel" fill="none" />
+                    <text x="70" y="39" fill="#fff">pink</text>
+                    <polygon points="8,32.8 9,34.3 11,34.8 9,35.3 8,36.8 7,35.3 5,34.8 7,34.3" fill="#d22856" />
+                    <polygon points="35,19 36,20.5 38,21 36,21.5 35,23 34,21.5 32,21 34,20.5" fill="#d22856" />
+                    <polygon points="43,12 44,14.5 46,15.5 44,16.5 43,19 42,16.5 40,15.5 42,14.5" fill="#d22856" />
+                    <polygon points="93,7 94,9 96,10 94,11 93,13 92,11 90,10 92,9" fill="#d22856" />
+                </svg>
+                <svg class="logo logo--tablet page-header__logo">
+                    <path d="M14,1 Q4,-1 1,27 M1,28 6,28 M28,28 32,28 M56,28 60,28 M48,1 Q58,-1, 60,28" stroke="#fff" stroke-width="3" stroke-linecap="round" fill="none" />
+                    <circle r="11" cx="17" cy="28" stroke="#fff" stroke-width="3" fill="none" />
+                    <circle r="11" cx="44" cy="28" stroke="#fff" stroke-width="3" fill="none" />
+                    <text x="70" y="39" fill="#fff">pink</text>
+                </svg>
+                <svg class="logo logo--mobile page-header__logo">
+                    <text x="0" y="22" fill="#fff">pink</text>
+                </svg>
+            </a>
+            <nav class="page-navigation">
+                <li><a class="page-navigation__item" href="index.html">Главная</a></li>
+                <li><a class="page-navigation__item" href="#">Фотографии</a></li>
+                <li><a class="page-navigation__item page-navigation__item--active" href="competition.html">Конкурс</a></li>
+                <li><a class="page-navigation__item" href="#"><span>Html</span> Academy</a></li>
+            </nav>
+            <div class="menu-burger">
+                <div class="menu-burger__line"></div>
+            </div>
+        </div>
+    </header>
+    <div class="promo promo--competition">
+        <div class="container clearfix">
+            <h1 class="promo__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+        </div>
+    </div>
+    <div class="competition">
+        <div class="container">
+            <header class="competition__header">
+                <p>Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+            </header>
+            <form class="form" action="#" method="get">
+                <fieldset class="form__personal-info">
+                    <div>
+                        <label class="form__label-pink" for="surname">Фамилия:</label>
+                        <input type="text" id="surname" placeholder="Укажите вашу фамилию" required>
+                    </div>
+                    <div>
+                        <label class="form__label-pink" for="name">Имя:</label>
+                        <input type="text" id="name" placeholder="Введите ваше имя" required>
+                    </div>
+                    <div>
+                        <label class="form__label-pink" for="midname">Отчество:</label>
+                        <input type="text" id="midname" placeholder="Ну и отчество тоже" required>
+                    </div>
+                </fieldset>
+                <fieldset class="form__radio-btns">
+                    <legend><span>С каким приложением путешествовали?</span></legend>
+                    <div class="radio-btns-wrapper">
+                        <div>
+                            <input type="radio" id="radio-ios" name="radio-app" checked>
+                            <label class="form__label-blue" for="radio-ios">Pink для iOS</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="radio-android" name="radio-app">
+                            <label class="form__label-blue" for="radio-android">Pink для Android</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="radio-phone" name="radio-app">
+                            <label class="form__label-blue" for="radio-phone">Windows phone</label>
+                        </div>    
+                    </div>
+                </fieldset>
+                <fieldset class="form__contacts clearfix">
+                    <legend><span>Контактная информация</span></legend>
+                    <div class="form__tel-wrapper">
+                        <input type="tel" placeholder="+7 XXX XXX-XX-XX" required>
+                        <label>Номер телефона</label>
+                    </div>
+                    <div class="form__email-wrapper">
+                        <input type="email" placeholder="Введите почту" required>
+                        <label>Адрес почты</label>
+                    </div>  
+                </fieldset>
+                <fieldset class="form__progress">
+                    <legend><span>Ваши безбашенные достижения в путешествии</span></legend>
+                    <div class="progress-cols-wrapper">
+                        <div class="progress-col">
+                            <input type="checkbox" id="progress-checkbox1" checked>
+                            <label for="progress-checkbox1">Сделал селфи с акулой</label>
+                            <input type="checkbox" id="progress-checkbox2" checked>
+                            <label for="progress-checkbox2">Обгорел на пляже</label>
+                        </div>
+                        <div class="progress-col">
+                            <input type="checkbox" id="progress-checkbox3">
+                            <label for="progress-checkbox3">Видел Чака Норриса</label>
+                            <input type="checkbox" id="progress-checkbox4">
+                            <label for="progress-checkbox4">Накупил сувениров</label>
+                        </div>
+                        <div class="progress-col">
+                            <input type="checkbox" id="progress-checkbox5" checked>
+                            <label for="progress-checkbox5">Удержал башню</label>    
+                            <input type="checkbox" id="progress-checkbox6">
+                            <label for="progress-checkbox6">Разгромил отель</label>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="form__emotions">
+                    <legend><span>Опишите свои эмоции</span></legend>
+                    <textarea placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+                </fieldset>
+                <div class="form__footer">
+                    <button class="form__btn" type="submit"><span>Отправить форму</span></button>
+                    <span class="required-text"><b class="asterisk">&#8270;</b> &#8212; обязательные <span>для заполнение</span> поля</span>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer class="page-footer">
+        <div class="container">
+            <a href="index.html">
+                <svg class="logo logo--desktop page-footer__logo">
+                    <path d="M14,1 Q4,-1 1,27 M1,28 6,28 M28,28 32,28 M56,28 60,28 M48,1 Q58,-1, 60,28" stroke="#d22856" stroke-width="3" stroke-linecap="round" fill="none" />
+                    <circle r="11" cx="17" cy="28" stroke="#d22856" stroke-width="3" stroke-dasharray="22.7 9 40" stroke-linecap="round" fill="none" />
+                    <circle r="11" cx="44" cy="28" stroke="#d22856" stroke-width="3" stroke-dasharray="38.7 6 1.8 8 15" stroke-linecap="bevel" fill="none" />
+                    <text x="70" y="39" fill="#283645">pink</text>
+                    <polygon points="8,32.8 9,34.3 11,34.8 9,35.3 8,36.8 7,35.3 5,34.8 7,34.3" fill="#283645" />
+                    <polygon points="35,19 36,20.5 38,21 36,21.5 35,23 34,21.5 32,21 34,20.5" fill="#283645" />
+                    <polygon points="43,12 44,14.5 46,15.5 44,16.5 43,19 42,16.5 40,15.5 42,14.5" fill="#283645" />
+                    <polygon points="93,7 94,9 96,10 94,11 93,13 92,11 90,10 92,9" fill="#d22856" />
+                </svg>
+                <svg class="logo logo--tablet page-footer__logo">
+                    <path d="M14,1 Q4,-1 1,27 M1,28 6,28 M28,28 32,28 M56,28 60,28 M48,1 Q58,-1, 60,28" stroke="#d22856" stroke-width="3" stroke-linecap="round" fill="none" />
+                    <circle r="11" cx="17" cy="28" stroke="#d22856" stroke-width="3" fill="none" />
+                    <circle r="11" cx="44" cy="28" stroke="#d22856" stroke-width="3" fill="none" />
+                    <text x="70" y="39" fill="#283645">pink</text>
+                </svg>
+            </a>
+            <div class="social-icons">
+                <a class="social-icons__item" href="https://twitter.com" target="_blank"><i class="icon-twitter"></i></a>
+                <a class="social-icons__item" href="https://facebook.com" target="_blank"><i class="icon-facebook"></i></a>
+                <a class="social-icons__item" href="https://youtube.com" target="_blank"><i class="icon-play"></i></a>
+            </div>
+            <a class="develop-logo" href="https://htmlacademy.ru" target="_blank">
+                <span>Разработано</span>
+            </a>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

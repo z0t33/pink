@@ -1,0 +1,252 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"mw",
+				"max-width"
+			],
+			[
+				"overflow",
+				"overflow-y"
+			],
+			[
+				"box",
+				"box-sizing"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"my",
+				"myPlacemark"
+			],
+			[
+				"fo",
+				"for\tfor (…) {…}"
+			],
+			[
+				"ba",
+				"background-image"
+			],
+			[
+				"max-",
+				"max-width"
+			],
+			[
+				"back",
+				"background-size"
+			],
+			[
+				"h",
+				"hello"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "Package Control: ",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: e",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 412.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/z0t/Documents/IT/02.Верстка/sass_promo/scss/style.scss",
+		"/C/Users/z0t/Documents/IT/02.Верстка/pink-2017/css/style.css",
+		"/C/Users/z0t/Documents/IT/02.Верстка/pink-2017/index.html",
+		"/C/Users/z0t/Desktop/i.html",
+		"/C/Users/z0t/AppData/Roaming/Sublime Text 3/Packages/User/ColorPicker.sublime-settings",
+		"/C/Users/z0t/AppData/Roaming/Sublime Text 3/Packages/ColorPicker/ColorPicker.sublime-settings",
+		"/C/Users/z0t/Downloads/styles.css",
+		"/C/Users/z0t/Downloads/index.html",
+		"/C/Users/z0t/Documents/IT/02.Верстка/pink-2017/js/script.js",
+		"/C/Users/z0t/Documents/IT/02.Верстка/pink-2017/js/map.js",
+		"/C/Users/z0t/Documents/IT/02.Верстка/04.barbershop/index.html",
+		"/C/Users/z0t/Documents/IT/02.Верстка/05.technomart/index.html",
+		"/C/Users/z0t/Desktop/logotype-white-desktop.svg",
+		"/C/Users/z0t/Documents/IT/02.Верстка/pink-2017/logotype-white-desktop.svg",
+		"/C/Users/z0t/Documents/Programming/02.JavaScript/05.Books/practice/main.js",
+		"/C/Users/z0t/Documents/Programming/02.JavaScript/05.Books/practice/index.html",
+		"/C/Users/z0t/Documents/Programming/02.JavaScript/05.Books/practice/main.css",
+		"/C/Users/z0t/Desktop/index.html",
+		"/C/Users/z0t/Desktop/style.css",
+		"/C/Users/z0t/Documents/Programming/Practice/site/css/style.css",
+		"/C/Users/z0t/Documents/Programming/Practice/site/index.html",
+		"/C/Users/z0t/Documents/Programming/Practice/Projects/technomart-2017/css/style.css",
+		"/C/Users/z0t/Documents/site/index.html",
+		"/C/Users/z0t/Documents/site/css/style.css",
+		"/C/Users/z0t/Documents/Programming/Practice/GIT/pink-2017/index.html",
+		"/C/Users/z0t/Documents/Programming/Practice/GIT/pink-2017/css/style.css",
+		"/C/Users/z0t/Documents/Programming/Theory/01.HTML,CSS/Books/Девид Макфарланд - Новая большая книга CSS/materials/03/selector_basics.html",
+		"/C/Users/z0t/Documents/Programming/Practice/GIT/gllacy-2017/index.html",
+		"/C/Users/z0t/Documents/Programming/Practice/GIT/gllacy-2017/catalog.html",
+		"/C/Users/z0t/Documents/Programming/Practice/Projects/barbershop-2017/index.html",
+		"/C/Users/z0t/Documents/Programming/Practice/GIT/gllacy-2017/css/style.css",
+		"/C/Users/z0t/index.html",
+		"/C/Users/z0t/AppData/Roaming/Sublime Text 3/Packages/SideBarEnhancements/Side Bar.sublime-settings",
+		"/C/Users/z0t/AppData/Roaming/Sublime Text 3/Packages/SideBarEnhancements/Default (Windows).sublime-keymap",
+		"/C/Users/z0t/AppData/Roaming/Sublime Text 3/Packages/AdvancedNewFile/Default (Windows).sublime-keymap",
+		"/C/Users/z0t/AppData/Roaming/Sublime Text 3/Packages/AdvancedNewFile/README.md"
+	],
+	"find":
+	{
+		"height": 28.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "index.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
