@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pink</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="page-header">
+        <div class="container clearfix">
+            <a href="index.html">
+                <svg class="logo logo--desktop page-header__logo">
+                    <path d="M14,1 Q4,-1 1,27 M1,28 6,28 M28,28 32,28 M56,28 60,28 M48,1 Q58,-1, 60,28" stroke="#fff" stroke-width="3" stroke-linecap="round" fill="none" />
+                    <circle r="11" cx="17" cy="28" stroke="#fff" stroke-width="3" stroke-dasharray="22.7 9 40" stroke-linecap="round" fill="none" />
+                    <circle r="11" cx="44" cy="28" stroke="#fff" stroke-width="3" stroke-dasharray="38.7 6 1.8 8 15" stroke-linecap="bevel" fill="none" />
+                    <text x="70" y="39" fill="#fff">pink</text>
+                    <polygon points="8,32.8 9,34.3 11,34.8 9,35.3 8,36.8 7,35.3 5,34.8 7,34.3" fill="#d22856" />
+                    <polygon points="35,19 36,20.5 38,21 36,21.5 35,23 34,21.5 32,21 34,20.5" fill="#d22856" />
+                    <polygon points="43,12 44,14.5 46,15.5 44,16.5 43,19 42,16.5 40,15.5 42,14.5" fill="#d22856" />
+                    <polygon points="93,7 94,9 96,10 94,11 93,13 92,11 90,10 92,9" fill="#d22856" />
+                </svg>
+                <svg class="logo logo--tablet page-header__logo">
+                    <path d="M14,1 Q4,-1 1,27 M1,28 6,28 M28,28 32,28 M56,28 60,28 M48,1 Q58,-1, 60,28" stroke="#fff" stroke-width="3" stroke-linecap="round" fill="none" />
+                    <circle r="11" cx="17" cy="28" stroke="#fff" stroke-width="3" fill="none" />
+                    <circle r="11" cx="44" cy="28" stroke="#fff" stroke-width="3" fill="none" />
+                    <text x="70" y="39" fill="#fff">pink</text>
+                </svg>
+                <svg class="logo logo--mobile page-header__logo">
+                    <text x="0" y="22" fill="#fff">pink</text>
+                </svg>
+            </a>
+            <nav class="page-navigation">
+                <li><a class="page-navigation__item" href="index.html">Главная</a></li>
+                <li><a class="page-navigation__item page-navigation__item--active" href="photo.html">Фотографии</a></li>
+                <li><a class="page-navigation__item" href="competition.html">Конкурс</a></li>
+                <li><a class="page-navigation__item" href="https://htmlacademy.ru" target="_blank"><span>Html</span> Academy</a></li>
+            </nav>
+            <div class="menu-burger">
+                <div class="menu-burger__line"></div>
+            </div>
+        </div>
+    </header>
+    <div class="promo promo--photo">
+        <div class="container clearfix">
+            <h1 class="promo__title promo__title--photo">Фотографии пользователей</h1>
+        </div>
+    </div>
+    <section class="photogallery">
+        <header class="photogallery__header">
+            <p>Взгляните на фотографии, которые выкладывают пользователи! Видите,как не хватает ваших?</p>
+        </header>
+        <article class="user-photo best-photo">
+            <img class="user-photo__image" src="img/panorama.jpg" alt="panorama">
+            <div class="container">
+                <blockquote class="user-photo__label best-photo__label">
+                    <header class="user-photo__header best-photo__header">
+                        <cite class="user-photo__author">Анна <span>(5 минут назад)</span></cite>
+                        <b class="user-photo__likes">
+                            Нравится:
+                            <span class="user-photo__likes-count">215</span>
+                            <i class="icon-heart-empty"></i>
+                        </b>
+                    </header>
+                    <p class="user-photo__description">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+                </blockquote>
+            </div>
+        </article>
+        <div class="container">
+            <article class="user-photo">
+                <img class="user-photo__image" src="img/photo-1.jpg" alt="photo-1">
+                <blockquote class="user-photo__label">
+                    <heder class="user-photo__header">
+                        <cite class="user-photo__author">Левон <span>(5 часов назад)</span></cite>
+                    </heder>
+                    <p class="user-photo__description">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                </blockquote>
+                <footer class="user-photo__footer">
+                    <b class="user-photo__likes user-photo__likes--fullW">
+                        Нравится:
+                        <span class="user-photo__likes-count">356</span>
+                        <i class="icon-heart-empty"></i>
+                    </b>
+                </footer>
+            </article>
+            <article class="user-photo">
+                <img class="user-photo__image" src="img/photo-2.jpg" alt="photo-2">
+                <blockquote class="user-photo__label">
+                    <heder class="user-photo__header">
+                        <cite class="user-photo__author">Антон <span>(12 часов назад)</span></cite>
+                    </heder>
+                    <p class="user-photo__description">Соседи будут рады!</p>
+                </blockquote>
+                <footer class="user-photo__footer">
+                    <b class="user-photo__likes user-photo__likes--fullW">
+                        Нравится:
+                        <span class="user-photo__likes-count">666</span>
+                        <i class="icon-heart-empty"></i>
+                    </b>
+                </footer>
+            </article>
+            <article class="user-photo">
+                <img class="user-photo__image" src="img/photo-3.jpg" alt="photo-3">
+                <blockquote class="user-photo__label">
+                    <heder class="user-photo__header">
+                        <cite class="user-photo__author">Борис <span>(20 часов назад)</span></cite>
+                    </heder>
+                    <p class="user-photo__description">Здесь могла бы быть ваша цитата о высоком и важном.</p>
+                </blockquote>
+                <footer class="user-photo__footer">
+                    <b class="user-photo__likes user-photo__likes--fullW">
+                        Нравится:
+                        <span class="user-photo__likes-count">215</span>
+                        <i class="icon-heart-empty"></i>
+                    </b>
+                </footer>
+            </article>
+            <article class="user-photo">
+                <img class="user-photo__image" src="img/photo-4.jpg" alt="photo-4">
+                <blockquote class="user-photo__label">
+                    <heder class="user-photo__header">
+                        <cite class="user-photo__author">Сергей <span>(25 часов назад)</span></cite>
+                    </heder>
+                    <p class="user-photo__description">Самая кубанская в мире!</p>
+                </blockquote>
+                <footer class="user-photo__footer">
+                    <b class="user-photo__likes user-photo__likes--fullW">
+                        Нравится:
+                        <span class="user-photo__likes-count">4</span>
+                        <i class="icon-heart-empty"></i>
+                    </b>
+                </footer>
+            </article>
+            <article class="user-photo">
+                <img class="user-photo__image" src="img/photo-5.jpg" alt="photo-5">
+                <blockquote class="user-photo__label">
+                    <heder class="user-photo__header">
+                        <cite class="user-photo__author">Максим <span>(40 часов назад)</span></cite>
+                    </heder>
+                    <p class="user-photo__description">Где снег то?</p>
+                </blockquote>
+                <footer class="user-photo__footer">
+                    <b class="user-photo__likes user-photo__likes--fullW">
+                        Нравится:
+                        <span class="user-photo__likes-count">150</span>
+                        <i class="icon-heart-empty"></i>
+                    </b>
+                </footer>
+            </article>
+            <article class="user-photo">
+                <img class="user-photo__image" src="img/photo-6.jpg" alt="photo-6">
+                <blockquote class="user-photo__label">
+                    <heder class="user-photo__header">
+                        <cite class="user-photo__author">Надежда <span>(45 часов назад)</span></cite>
+                    </heder>
+                    <p class="user-photo__description">Всем GM и взаимные лайки!</p>
+                </blockquote>
+                <footer class="user-photo__footer">
+                    <b class="user-photo__likes user-photo__likes--fullW">
+                        Нравится:
+                        <span class="user-photo__likes-count">2560</span>
+                        <i class="icon-heart-empty"></i>
+                    </b>
+                </footer>
+            </article>
+        </div>
+        <figure class="upload-image">
+                <figcaption class="upload-image__header">
+                    <p>Затмите их всех!</p>
+                    <p>Выкладывайте все, что накопилось в телефоне!</p>
+                </figcaption>
+                <div class="container">
+                    <div class="upload-image__content">
+                    <div class="upload-image__item">
+                        <img src="img/photo-7.jpg" alt="upload-photo">
+                    </div>
+                    <div class="controls">
+                        <div class="controls__item controls__item--crop">
+                            <input id="radio-crop" type="radio" name="tools" checked>
+                            <label for="radio-crop">
+                                <svg class="controls__svg controls__svg--crop">
+                                    <path d="M0,10 9,10Z M33,44 33,34Z"/>
+                                    <polyline points="11,0 11,34, 44,34" fill="none" />
+                                    <polyline points="17,10 33,10 33,28" fill="none" />
+                                </svg>
+                            </label>
+                            <span class="controls__range"><span class="controls__slide"></span></span>
+                        </div>
+                        <div class="controls__item controls__item--fill">
+                            <input id="radio-fill" type="radio" name="tools">
+                            <label for="radio-fill">
+                                <svg class="controls__svg controls__svg--fill">
+                                    <line x1="0" y1="42" x2="48" y2="42" />
+                                    <polyline points="15,1 33,20 21,32 9,20 21,8" fill="none" />
+                                    <polygon points="33,20 21,32 9,20 " stroke="none" />
+                                    <path d="M38,23 Q31,32  38,34Z M38,34 Q45,32 38,23Z" stroke-width="1" />
+                                </svg>
+                            </label>
+                            <span class="controls__range"><span class="controls__slide"></span></span>
+                        </div>
+                        <div class="controls__item controls__item--contrast">
+                            <input id="radio-contrast" type="radio" name="tools">
+                            <label for="radio-contrast">
+                                <svg class="controls__svg controls__svg--contrast">
+                                    <circle cx="16" cy="16" r="14" fill="none" />
+                                    <path d="M17,7 C28,7 28,25  17,25" stroke-width="1" />
+                                </svg>    
+                            </label>
+                            <span class="controls__range"><span class="controls__slide"></span></span>
+                        </div>
+                        <div class="upload-image__btns">
+                            <button class="btn btn--upload-image btn--upload">Запостить</button>
+                            <button class="btn btn--upload-image btn--cancel">Отмена</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+        </figure>
+    </section>
+    <footer class="page-footer">
+        <div class="container">
+            <a href="index.html">
+                <svg class="logo logo--desktop page-footer__logo">
+                    <path d="M14,1 Q4,-1 1,27 M1,28 6,28 M28,28 32,28 M56,28 60,28 M48,1 Q58,-1, 60,28" stroke="#d22856" stroke-width="3" stroke-linecap="round" fill="none" />
+                    <circle r="11" cx="17" cy="28" stroke="#d22856" stroke-width="3" stroke-dasharray="22.7 9 40" stroke-linecap="round" fill="none" />
+                    <circle r="11" cx="44" cy="28" stroke="#d22856" stroke-width="3" stroke-dasharray="38.7 6 1.8 8 15" stroke-linecap="bevel" fill="none" />
+                    <text x="70" y="39" fill="#283645">pink</text>
+                    <polygon points="8,32.8 9,34.3 11,34.8 9,35.3 8,36.8 7,35.3 5,34.8 7,34.3" fill="#283645" />
+                    <polygon points="35,19 36,20.5 38,21 36,21.5 35,23 34,21.5 32,21 34,20.5" fill="#283645" />
+                    <polygon points="43,12 44,14.5 46,15.5 44,16.5 43,19 42,16.5 40,15.5 42,14.5" fill="#283645" />
+                    <polygon points="93,7 94,9 96,10 94,11 93,13 92,11 90,10 92,9" fill="#d22856" />
+                </svg>
+                <svg class="logo logo--tablet page-footer__logo">
+                    <path d="M14,1 Q4,-1 1,27 M1,28 6,28 M28,28 32,28 M56,28 60,28 M48,1 Q58,-1, 60,28" stroke="#d22856" stroke-width="3" stroke-linecap="round" fill="none" />
+                    <circle r="11" cx="17" cy="28" stroke="#d22856" stroke-width="3" fill="none" />
+                    <circle r="11" cx="44" cy="28" stroke="#d22856" stroke-width="3" fill="none" />
+                    <text x="70" y="39" fill="#283645">pink</text>
+                </svg>
+            </a>
+            <div class="social-icons">
+                <a class="social-icons__item" href="https://twitter.com" target="_blank"><i class="icon-twitter"></i></a>
+                <a class="social-icons__item" href="https://facebook.com" target="_blank"><i class="icon-facebook"></i></a>
+                <a class="social-icons__item" href="https://youtube.com" target="_blank"><i class="icon-play"></i></a>
+            </div>
+            <a class="develop-logo" href="https://htmlacademy.ru" target="_blank">
+                <span>Разработано</span>
+            </a>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

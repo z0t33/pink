@@ -1,12 +1,11 @@
-/*-------fonts-------*/
 @font-face {
   font-family: 'symbols-pink';
-  src: url('fonts/fontello.eot?24202986');
-  src: url('fonts/fontello.eot?24202986#iefix') format('embedded-opentype'),
-       url('fonts/fontello.woff2?24202986') format('woff2'),
-       url('fonts/fontello.woff?24202986') format('woff'),
-       url('fonts/fontello.ttf?24202986') format('truetype'),
-       url('fonts/fontello.svg?24202986#fontello') format('svg');
+  src: url('fonts/fontello.eot?21071391');
+  src: url('fonts/fontello.eot?21071391#iefix') format('embedded-opentype'),
+       url('fonts/fontello.woff2?21071391') format('woff2'),
+       url('fonts/fontello.woff?21071391') format('woff'),
+       url('fonts/fontello.ttf?21071391') format('truetype'),
+       url('fonts/fontello.svg?21071391#fontello') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -16,51 +15,51 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'fontello';
-    src: url('../font/fontello.svg?24202986#fontello') format('svg');
+    src: url('../font/fontello.svg?18209177#fontello') format('svg');
   }
 }
 */
-
+ 
  [class^="icon-"]:before, [class*=" icon-"]:before {
   font-family: "symbols-pink";
   font-style: normal;
   font-weight: normal;
   speak: none;
-
+ 
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
   margin-right: .2em;
   text-align: center;
   /* opacity: .8; */
-
+ 
   /* For safety - reset parent styles, that can break glyph codes*/
   font-variant: normal;
   text-transform: none;
-
+ 
   /* fix buttons height, for twitter bootstrap */
   line-height: 1em;
-
+ 
   /* Animation center compensation - margins should be symmetric */
   /* remove if not needed */
   margin-left: .2em;
-
+ 
   /* you can be more comfortable with increased icons size */
   /* font-size: 120%; */
-
+ 
   /* Font smoothing. That was taken from TWBS */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
+ 
   /* Uncomment for 3D effect */
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
-
-.icon-play:before { content: '\e800'; } /* '' */
+ 
+.icon-heart-empty:before { content: '\e800'; } /* '' */
+.icon-play:before { content: '\e801'; } /* '' */
+.icon-heart:before { content: '\e802'; } /* '' */
 .icon-twitter:before { content: '\f309'; } /* '' */
 .icon-facebook:before { content: '\f30c'; } /* '' */
-
-
 
 @font-face {
     font-family: "Open Sans";
@@ -104,6 +103,7 @@ body {
 }
 img {
     max-width: 100%;
+    display: block;
 }
 h1 {
     font-size: 3.125em;
@@ -123,6 +123,9 @@ a {
     font-size: 1.125em;
     text-decoration: none;
 }
+blockquote {
+    margin: 0;
+}
 input[type="radio"],
 input[type="checkbox"] {
     display: none;
@@ -132,6 +135,9 @@ button {
 }
 button:focus {
     outline: none;
+}
+label {
+    user-select: none;
 }
 #reviews__radio-1:checked ~ .labels-control label[for="reviews__radio-1"],
 #reviews__radio-2:checked ~ .labels-control label[for="reviews__radio-2"],
@@ -236,6 +242,7 @@ button:focus {
     font-weight: 400;
     color: #fff;
     padding-bottom: 8px;
+    user-select: none;
 }
 .page-navigation__item:hover {
     border-bottom: 2px solid #fff;
@@ -243,27 +250,30 @@ button:focus {
 .page-navigation__item--active:hover {
     color: #F42357;
     border-bottom-color: #F42357;
-}
-.page-navigation__item:active {
-    color: #fff;
-    opacity: 0.3;
+    cursor: default;
 }
 .promo {
     padding-top: 230px;
     background: url('img/back-desktop.jpg')  center center no-repeat;
     background-size: cover;
 }
-.promo--competition {
-    padding-top: 175px;
-    background-position: center 0;
-}
 .promo .container {
     position: relative;
 }
+.promo--competition,
+.promo--photo {
+    padding-top: 175px;
+    background-position: center 0;
+}
 .promo__title {
-    width: 750px;
     margin: 0 auto 112px;
     color: #fff;
+}
+.promo__title--competition {
+    width: 750px;
+}
+.promo__title--photo {
+    width: 400px;
 }
 .download-app {
     position: relative;
@@ -276,23 +286,27 @@ button:focus {
     margin: 0 auto 52px;
     line-height: 1.3;
 }
-.download-app__btn {
+.btn {
     display: block;
     padding: 11px 0 13px;
-    margin-bottom: 62px;
-    border: 3px solid #fff;
+    border-width: 3px;
+    border-style: solid;
     border-radius: 35px;
     text-align: center;
     font-size: 1.125em;
     font-weight: bold;
     letter-spacing: 0.5px;
+}
+.btn--download-app {
+    margin-bottom: 62px;
+    border-color: #fff;
     color: #fff;
 }
-.download-app__btn:hover {
+.btn--download-app:hover {
     background-color: #fff;
     color: rgb(210, 40, 86);
 }
-.download-app__btn:active {
+.btn--download-app:active {
     color: rgba(210, 40, 86, 0.3)
 }
 .download-app__OS-btns {
@@ -461,7 +475,7 @@ button:focus {
     position: relative;
     max-width: 940px;
     height: 185px;
-    margin: 0 auto;
+    margin: auto;
 }
 .reviews__switch-arrows label {
     display: none;
@@ -752,6 +766,257 @@ button:focus {
 
 
 
+/*--------users-photo--------*/
+.photogallery {
+    padding-top: 95px;
+}
+.photogallery .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.photogallery__header p {
+    width: 575px;
+    margin: 0 auto 90px;
+    text-align: center;
+}
+.best-photo {
+    position: relative;
+}
+.best-photo::after {
+    position: absolute;
+    content: 'Панорама дня';
+    top: 55px;
+    right: 10.833333%;
+    width: 140px;
+    background-color: #d22856;
+    line-height: 36px;
+    text-align: center;
+    font-size: 0.75em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+}
+.user-photo {
+    position: relative;
+    width: 31.914894%;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+    background-color: #f2f2f2;
+}
+.best-photo {
+    width: 100%;
+    background-color: #fff;
+}
+.user-photo__image {
+    width: 100%;
+}
+.user-photo__label {
+    width: 100%;
+    padding: 25px;
+    background-color: #f2f2f2;
+    font-size: 0.875em;
+    box-sizing: border-box;
+}
+.best-photo__header {
+    display: flex;
+    justify-content: space-between;
+}
+.user-photo__author span,
+.user-photo__likes {
+    font-size: 0.85714286em;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+.user-photo__author {
+    font-style: normal;
+    font-weight: bold;
+}
+.best-photo .user-photo__author {
+    font-weight: 200;
+}
+.user-photo__description {
+    margin-bottom: 0;
+}
+.user-photo__likes {
+    font-weight: 400;
+    color: #d22856;
+}
+.user-photo__likes--fullW {
+    position: relative;
+    display: block;
+}
+.user-photo__likes--fullW .icon-heart-empty {
+    position: absolute;
+    right: 0;
+}
+.user-photo__likes--fullW 
+.user-photo__description {
+    font-size: 1em;
+}
+.user-photo__likes .icon-heart-empty::before {
+    font-weight: bold;
+}
+.user-photo__footer {
+    position: absolute;
+    width: 100%;
+    bottom: 25px;
+    padding: 0 25px;
+    box-sizing: border-box;
+}
+.icon-heart {
+    color: #d22856;
+}
+.icon-heart-empty:hover::before {
+    content: '\e802';
+    cursor: pointer;
+}
+.upload-image {
+    width: 100%;
+    margin: 0;
+    padding-top: 15px;
+}
+.upload-image__header {
+    margin-bottom: 50px;
+}
+.upload-image__header p {
+    margin: 0;
+    text-align: center;
+}
+.upload-image__content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #f2f2f2;
+    padding: 60px 60px 60px 80px;
+}
+.controls {
+    position: relative;
+    width: 51.875%;
+    margin-left: 50px;
+}
+.controls__item {
+    position: relative;
+    line-height: 80px;
+    padding-left: 90px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #dddfe0;
+}
+.controls__item label {
+    position: absolute;
+    left: 0;
+    line-height: 0;
+}
+.controls__item--crop label {
+    top: 22px;
+    width: 44px;
+    height: 44px;
+} 
+.controls__item--fill label {
+    top: 23px;
+    width: 48px;
+    height: 43px;
+} 
+.controls__item--contrast label {
+    top: 30px;
+    left: 2px;
+    width: 33px;
+    height: 33px;
+} 
+.controls__item input:checked + label > .controls__svg {
+    fill: #d22856;
+    stroke: #d22856;
+}
+.controls__item input:checked ~ .controls__range > .controls__slide {
+    background: #d22856;
+}
+.controls__svg {
+    width: 100%;
+    height: 100%;
+    stroke-width: 4;
+    stroke: #b5b9be;
+    fill: #b5b9be;
+}
+.controls__svg polyline {
+    stroke-linejoin: round;
+}
+.controls__svg:hover {
+    cursor: pointer;
+    stroke: #8d949b;
+    fill: #8d949b;
+}
+.controls__range {
+    position: relative;
+    display: inline-block;
+    height: 2px;
+    width: 90%;
+    background-color: #283645;
+}
+.controls__slide {
+    position: absolute;
+    top: -7px;
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    box-sizing: border-box;
+    border: 2px solid #d22856;
+    border-radius: 50%;
+}
+.controls__item--crop .controls__slide {
+    left: 10%;
+}
+.controls__item--fill .controls__slide {
+    left: 80%;
+}
+.controls__item--contrast .controls__slide {
+    left: 50%;
+}
+.controls__slide:hover {
+    cursor: pointer;
+}
+.upload-image__btns {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.btn--upload-image {
+    width: 185px;
+    background: transparent;
+}
+.btn--upload-image:hover {
+    cursor: pointer;
+}
+.btn--upload {
+    margin-right: 30px;
+    border-color: #d22856;
+    color: #d22856;
+}
+.btn--upload:hover {
+    background-color: #d22856;
+    color: #fff;
+}
+.btn--upload:active {
+    color: rgba(255,255,255, 0.3);
+}
+.btn--cancel {
+    border-color: #dddfe0;
+    color: #dddfe0;
+}
+.btn--cancel:hover {
+    border-color: #b5b9be;
+    color: #b5b9be;
+}
+.btn--cancel:active {
+    background-color: #b5b9be;
+    color: rgba(203,206,210,1.0);
+}
+
+
+
+
+
 /*-------competition-------*/
 .competition {
     padding-top: 95px;
@@ -793,6 +1058,10 @@ button:focus {
 .form textarea:hover,
 .form label:hover::before {
     border-color: #283645;
+}
+.form input[type="radio"] ~ label:hover,
+.form input[type="checkbox"] ~ label:hover {
+    cursor: pointer;
 }
 .form input:focus,
 .form textarea:focus,
@@ -1058,8 +1327,8 @@ fieldset {
 .form__btn:hover {
     background-color: #1c9b5e;
 }
-.form__btn:active span {
-    opacity: 0.3;
+.form__btn:active {
+    color: rgba(255,255,255, 0.3);
 }
 .form__btn:disabled {
     background-color: #e5e5e5;
@@ -1301,7 +1570,10 @@ fieldset {
         padding-top: 185px;
         background-image: url('img/back-tablet.jpg');
     }
-    .promo__title {
+    .promo--photo {
+        padding-top: 175px;
+    }
+    .promo__title--competition {
         width: 480px;
         margin-bottom: 80px;
     }
@@ -1313,7 +1585,7 @@ fieldset {
         width: 220px;
         margin-bottom: 29px;
     }
-    .download-app__btn {
+    .btn--download-app {
         margin-bottom: 43px;
     }
     .download-app__OS-btns {
@@ -1491,7 +1763,55 @@ fieldset {
 
 
 
-    /*competition*/
+
+    /*--------users-photo--------*/
+    .user-photo {
+        width: 48.553055%;
+    }
+    .upload-image .container {
+        position: relative;
+        width: 100%;
+    }
+    .upload-image__content {
+        padding: 50px 5.714286%;
+    }
+    .upload-image__item {
+        width: 44.935809%;
+        min-width: 265px;
+    }
+    .best-photo {
+        width: 100%;
+    }
+    .upload-image__btns {
+        flex-direction: column;
+    }
+    .btn--upload {
+        margin-bottom: 20px;
+    }
+    .btn--upload-image {
+        width: 100%;
+    }
+    .controls__item {
+        padding-left: 55px;
+        line-height: 70px;
+    }
+    .controls__item label {
+        transform: scale(0.5);
+    }
+    .controls__item--crop label {
+        top: 18px;
+    }
+    .controls__item--fill label {
+        top: 19px;
+    }
+    .controls__item--contrast label {
+        top: 25px;
+    }
+
+
+
+
+    /*---------competition---------*/
     .competition__header p {
         width: 490px;
         font-size: 1.125em;
@@ -1598,13 +1918,17 @@ fieldset {
         margin-bottom: 270px;
         background-image: url('img/back-mobile.jpg');
     }
-    .promo--competition {
+    .promo--competition,
+    .promo--photo {
         padding-top: 150px;
         margin-bottom: 0;
     }
-    .promo__title {
+    .promo__title--competition {
         width: 240px;
-        margin-bottom: 60px;
+    }
+    .promo__title--photo {
+        width: 180px;
+        margin-bottom: 83px;
     }
     .promo .container {
         width: 100%;
@@ -1629,7 +1953,7 @@ fieldset {
         font-size: 0.875em;
         line-height: 1.7;
     }
-    .download-app__btn {
+    .btn--download-app {
         margin-bottom: 30px;
     }
     .download-app__OS-btns {
@@ -1828,7 +2152,133 @@ fieldset {
 
 
 
-    /*competition*/
+    /*--------users-photo--------*/
+    .photogallery {
+        padding-top: 50px;
+    }
+    .photogallery__header p {
+        width: 250px;
+        margin-bottom: 55px;
+        font-size: 0.875em;
+    }
+    .best-photo::after {
+        top: 0;
+        right: 6.25%;
+    }
+    .user-photo__label {
+        position: relative;
+        padding-bottom: 25px;
+    }
+    .best-photo .user-photo__label {
+        padding-bottom: 55px;
+    }
+    .best-photo .user-photo__author {
+        font-weight: bold;
+    }
+    .user-photo__description {
+        margin-top: 5px;
+    }
+    .user-photo__likes {
+        position: absolute;
+        bottom: 25px;
+        padding-left: 30px;
+        font-size: 0.75em;
+        left: 20px;
+    }
+    .best-photo__header  .user-photo__likes {
+        font-size: 0.875em;
+    }
+    .user-photo__likes i {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .photogallery .contrainer {
+        flex-direction: column;
+    }
+    .user-photo {
+        width: 100%;
+    }
+    .user-photo__footer {
+        position: static;
+    }
+    .upload-image {
+        padding-top: 0;
+    }
+    .upload-image .container::after {
+        position: absolute;
+        content: '';
+        bottom: 195px;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background-color: #dddfe0;
+    }
+    .upload-image__content {
+        padding: 20px 5.78125%;
+    }
+    .upload-image__header {
+        width: 100%;
+        font-size: 0.875em;
+        margin-bottom: 50px;
+    }
+    .upload-image__content {
+        flex-direction: column;
+        padding-top: 20px;
+    }
+    .upload-image__item {
+        width: 100%;
+        max-width: 300px;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+    .controls {
+        position: relative;
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+    .controls__item {
+        position: static;
+        display: inline-block;
+        padding-left: 0;
+        margin-right: 35px;
+        margin-bottom: 85px;
+        border-bottom: none;
+        vertical-align: middle;
+    }
+    .controls__item:nth-child(3) {
+        margin-right: 0;
+    }
+    .controls__item label {
+        position: static;
+        display: inline-block;
+        transform: scale(1);
+    }
+    .controls__range {
+        display: none;
+        position: absolute;
+        width: 270px;
+        margin-left: -135px;
+        left: 50%;
+        right: 0;
+        bottom: 220px;
+    }
+    .upload-image__btns {
+        position: static;
+        margin-bottom: 20px;
+    }
+    .btn--upload {
+        margin-bottom: 12px;
+    }
+    .controls__item input:checked ~ .controls__range {
+        display: block;
+    }
+
+
+
+
+    /*---------competition---------*/
     .competition {
         padding-top: 50px;
     }
